@@ -32,7 +32,7 @@
         function transaksi() {
             if (input.value.length > 0) {
                 if (input.value < saldo) {
-                    if (input.value % 50000 == 0) {
+                    if (input.value % 50000 == 0 && input.value != 0) {
                         const konfirm = confirm(`Anda akan menarik uang sebesar ${input.value} saldo anda sebesar ${saldo}`)
                         if (konfirm == true) {
                             location.href = 'ambilKartu.html'
